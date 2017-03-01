@@ -1,13 +1,9 @@
 package com.ckr.authsrv.config;
 
+import com.ckr.authsrv.security.PublicClientDetailsService;
 import org.springframework.security.oauth2.config.annotation.builders.ClientDetailsServiceBuilder;
-import org.springframework.security.oauth2.config.annotation.builders.InMemoryClientDetailsServiceBuilder;
 import org.springframework.security.oauth2.provider.ClientDetails;
 import org.springframework.security.oauth2.provider.ClientDetailsService;
-import org.springframework.security.oauth2.provider.client.InMemoryClientDetailsService;
-
-import java.util.HashMap;
-import java.util.Map;
 
 /**
  * Created by ruoli.chen on 27/02/2017.

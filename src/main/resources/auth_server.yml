@@ -4,6 +4,17 @@ security:
   user:
     password: password
 
+authsrv:
+  security:
+    keystore:
+      name: authKeyStore.jks
+      password: keystorepassword
+      key:
+        alias: authKey
+        password: keypassword
+
+
 logging:
   level:
     org.springframework.security: DEBUG
+    com.ckr.authsrv: DEBUG
