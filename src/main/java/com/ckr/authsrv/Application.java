@@ -10,13 +10,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.Date;
 
 /**
  * Created by Administrator on 2017/2/26.
  */
 
 @SpringBootApplication
-@EnableAuthorizationServer
 @Controller
 public class Application {
 
@@ -24,7 +24,7 @@ public class Application {
     @PreAuthorize(" hasPermission('hello', 'view') ")
     public void hello(HttpServletResponse response){
         try {
-            response.getWriter().append("hello");
+            response.getWriter().append("hello " + new Date(System.currentTimeMillis()));
         } catch (IOException e) {
             e.printStackTrace();
         }

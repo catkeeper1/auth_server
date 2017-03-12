@@ -44,7 +44,7 @@ public class PublicClientDetailsService implements ClientDetailsService {
         details.setAccessTokenValiditySeconds(validitySeconds);
 
         HashSet<String> scopes = new HashSet<String>();
-        scopes.add("all");
+        scopes.add("read,write");
 
         details.setScope(scopes);
 
